@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    form(action="Enviando/Vehiculos/Enviar", method="post")
+        div
+            label(for="PlacaVehiculo") Placa Vehiculo
+                input(type="text", name="PlacaVehiculo", value= Vihiculos.PlacaVehiculo)#PlacaVehiculo
+
+            label(for="NombreConductor") Nombre Conductor
+                input(type="text", name="NombreConductor", value= Vihiculos.NombreConductor)#NombreConductor
+
+            label(for="EspacioAsignado") Espacio Asignado
+                input(type="text", name="EspacioAsignado", value= Vihiculos.EspacioAsignado)#EspacioAsignado
+
+            label(for="NumeroTicket") Numero de Ticket
+                input(type="text", name="NumeroTicket", value= Vihiculos.NumeroTicket)#NumeroTicket
+
+            label(for="FechaEntrada") Fecha de Entrada
+                input(type="text", name="FechaEntrada", value= Vihiculos.FechaEntrada)#FechaEntrada
+
+            label(for="HoraEntrada") Hora de Entrada
+                input(type="text", name="HoraEntrada", value= Vihiculos.HoraEntrada)#HoraEntrada
+
+            label(for="Estado") Estado
+                input(type="text", name="Estado", value= Vihiculos.Estado)#Estado
+            button(type="submit")#Enviar Enviar
+            button
+            a(href="/Vehiculos") Regresar   

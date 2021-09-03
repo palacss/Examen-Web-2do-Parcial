@@ -1,0 +1,14 @@
+extends layout 
+
+block content
+    div 
+        h1 Vehiculos registrados
+        each DatosV in vehiculos
+            ul 
+                li= DatosV.PlacaVehiculo
+                li= DatosV.NombreConductor
+                li= DatosV.EspacioAsignado
+                li= DatosV.NumeroTicket
+                li= DatosV.FechaEntrada
+                li= DatosV.HoraEntrada
+                li= DatosV.Estado
